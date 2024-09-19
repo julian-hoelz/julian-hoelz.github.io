@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Wanda</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="project-div-wanda">
+                <h1>Wanda</h1>
+                <h2>Bildergalerie</h2>
+                <div class="gallery">
+                    <img src="img/wanda/bild1.png" alt="Wanda-Bild 1" onclick="openLightbox(); currentSlide(0);" style="width: 460px;">
+                    <img src="img/wanda/bild2.png" alt="Wanda-Bild 2" onclick="openLightbox(); currentSlide(1);">
+                    <img src="img/wanda/bild3.png" alt="Wanda-Bild 3" onclick="openLightbox(); currentSlide(2);">
+                    <img src="img/wanda/bild4.png" alt="Wanda-Bild 4" onclick="openLightbox(); currentSlide(3);">
+                    <img src="img/wanda/bild5.png" alt="Wanda-Bild 5" onclick="openLightbox(); currentSlide(4);">
+                    <img src="img/wanda/bild6.png" alt="Wanda-Bild 6" onclick="openLightbox(); currentSlide(5);">
+                    <img src="img/wanda/bild7.png" alt="Wanda-Bild 7" onclick="openLightbox(); currentSlide(6);">
+                    <img src="img/wanda/bild8.png" alt="Wanda-Bild 8" onclick="openLightbox(); currentSlide(7);">
+                    <img src="img/wanda/bild9.png" alt="Wanda-Bild 9" onclick="openLightbox(); currentSlide(8);">
+                </div>
+                <p>Klicke die Bilder an, um sie groß und mit Beschreibungen angezeigt zu bekommen.</p>
+                <h2>Beschreibung</h2>
+                <p>
+                    Als erste Abschlussprojekt-Übung in meiner Ausbildung habe ich diese Webanwendung für meine Ausbildungsgruppe
+                    entwickelt. Meine Ausbildungskollegen und ich können darin unsere Ausbildungsnachweise anlegen, und mein Ausbilder
+                    kann sie annehmen oder ablehnen. Der Name Wanda steht für „Webanwendung für digitale Ausbildungsnachweise“.
+                    Die Webanwendung wird in meiner Ausbildungsgruppe noch nicht verwendet.
+                </p>
+                <h2>Sprachen</h2>
+                <p>PHP, MySQL, HTML, CSS, JavaScript</p>
+                <hr>
+                <button class="back-button" onclick="history.back();">Zurück zur Startseite</button>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox();">&times;</span>
+            <!-- Vollbildanzeige der Bilder -->
+            <div class="lightbox-content">
+                <div class="slides">
+                    <img src="img/wanda/bild1.png" alt="Wanda-Bild 1">
+                    <p class="description">Dies ist meine Ausbildungsnachweis-Liste in Wanda.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild2.png" alt="Wanda-Bild 2">
+                    <p class="description">Auf dieser Seite kann ein Auszubildender einen Ausbildungsnachweis bearbeiten.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild3.png" alt="Wanda-Bild 3">
+                    <p class="description">Auf dieser Seite kann ein Auszubildender einen bereits eingereichten Ausbildungsnachweis ansehen.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild4.png" alt="Wanda-Bild 4">
+                    <p class="description">Dies ist die Seite, auf der Auszubildende einen neuen Ausbildungsnachweis anlegen können.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild5.png" alt="Wanda-Bild 5">
+                    <p class="description">Dies sind die Einstellungen in Wanda.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild6.png" alt="Wanda-Bild 6">
+                    <p class="description">Auf dieser Seite kann ein Auszubildender sein Passwort ändern.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild7.png" alt="Wanda-Bild 7">
+                    <p class="description">Dies sind die Listen der neu eingereichten und bereits geprüften Ausbildungsnachweise, die hier dem Demo-Ausbilder angezeigt werden.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild8.png" alt="Wanda-Bild 8">
+                    <p class="description">Auf dieser Seite kann der Ausbilder einen Ausbildungsnachweis prüfen und annehmen oder ablehnen.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/wanda/bild9.png" alt="Wanda-Bild 9">
+                    <p class="description">Auf dieser Seite kann der Ausbilder einen geprüften Ausbildungsnachweis ansehen und noch Anmerkungen hinzufügen.</p>
+                </div>
+                <!-- Vorheriges- und Nächstes-Buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+        <script src="js/wanda-script.js"></script>
+    </body>
+</html>

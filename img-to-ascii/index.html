@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bild-zu-ASCII-Konverter</title>
+    <script src="https://cdn.jsdelivr.net/npm/image-js@0.35.6/lib/index.min.js"></script>
+</head>
+
+<body>
+    <h1>Bild-zu-ASCII-Konverter</h1>
+    <label for="img-picker" style="margin-bottom: 10px;">Wähle ein Bild aus:</label>
+    <input type="file" id="img-picker" accept="image/*" onchange="filePickedEvent(event);">
+    <div id="placeholder" class="placeholder">Kein Bild</div>
+    <img id="image-preview" src="" alt="Bildvorschau" class="hidden">
+    <label for="output-width-input" style="margin-top: 20px;">Ausgabebreite:</label>
+    <input id="output-width-input" type="number" value="100">
+    <label for="char-width-input">Zeichenbreite:</label>
+    <input id="char-width-input" type="number" value="11">
+    <label for="char-height-input">Zeichenhöhe:</label>
+    <input id="char-height-input" type="number" value="26"><br>
+    <input type="checkbox" id="invert-checkbox">
+    <label for="invert-checkbox" class="checkbox-label">Invertieren</label>
+    <button onclick="generateAscii();">Generieren</button>
+    <p id="output"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>

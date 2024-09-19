@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Mein Asteroids-Klon</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="language-selector" class="language-selector">
+                <div class="language" onmousedown="setLanguage('de', true);">
+                    <img src="img/flag/de.png" alt="Deutsch" class="flag">
+                    <p class="language-name">Deutsch</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('en', true);">
+                    <img src="img/flag/gb.png" alt="English" class="flag">
+                    <p class="language-name">English</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('eo', true);">
+                    <img src="img/flag/eo.png" alt="Esperanto" class="flag">
+                    <p class="language-name">Esperanto</p>
+                </div>
+            </div>
+            <div class="project-div-asteroids">
+                <h1>Asteroids</h1>
+                <h2 id="heading-gameplay-video"></h2>
+                <video src="vid/asteroids.mp4" controls width="370">Dein Browser unterstützt das Video-Tag nicht.</video>
+                <h2 id="heading-game-description"></h2>
+                <p id="paragraph-game-description-1"></p>
+                <p id="paragraph-game-description-2"></p>
+                <h2 id="heading-about-this-clone"></h2>
+                <p id="paragraph-about-this-clone"></p>
+                <h2 id="heading-language"></h2>
+                <p>Python 3 (Pygame)</p>
+                <h2>GitHub</h2>
+
+                <a href="https://github.com/julian-hoelz/asteroids" id="button-to-repository" class="link-button" target="_blank"></a>
+
+                <!-- <button id="button-to-repository" class="mail-button" onclick="location.href = 'https://github.com/julian-hoelz/asteroids';"></button> -->
+                <hr>
+                <button id="button-back-to-homepage" class="back-button" onclick="history.back();"></button>
+            </div>
+        </div>
+        <script src="js/asteroids-script.js"></script>
+    </body>
+</html>

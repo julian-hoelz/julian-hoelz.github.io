@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mastermind in der Konsole</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="language-selector" class="language-selector">
+            <div class="language" onmousedown="setLanguage('de', true);">
+                <img src="img/flag/de.png" alt="Deutsch" class="flag">
+                <p class="language-name">Deutsch</p>
+            </div>
+            <div class="language" onmousedown="setLanguage('en', true);">
+                <img src="img/flag/gb.png" alt="English" class="flag">
+                <p class="language-name">English</p>
+            </div>
+            <div class="language" onmousedown="setLanguage('eo', true);">
+                <img src="img/flag/eo.png" alt="Esperanto" class="flag">
+                <p class="language-name">Esperanto</p>
+            </div>
+        </div>
+        <div class="project-div-mastermind">
+            <h1 id="title"></h1>
+            <img src="img/mastermind.gif" alt="Mastermind-GIF" width="250">
+            <h2 id="heading-game-description"></h2>
+            <p id="paragraph-game-description-1"></p>
+            <p id="paragraph-game-description-2"></p>
+            <p id="paragraph-game-description-3"><p>
+            <h2 id="heading-how-to-play"></h2>
+            <p id="paragraph-how-to-play"></p>
+            <h2 id="heading-language"></h2>
+            <p>Python 3</p>
+            <h2>GitHub</h2>
+            <button id="button-to-repository" class="mail-button"></button>
+            <hr>
+            <button id="button-back-to-homepage" class="back-button" onclick="history.back();"></button>
+        </div>
+    </div>
+    <script src="js/mastermind-script.js"></script>
+</body>
+
+</html>

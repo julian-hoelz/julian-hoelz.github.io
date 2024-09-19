@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    height: 100vh; /* Vollständige Höhe des Viewports */
+    display: flex;
+    align-items: flex-start; /* Positioniert den Container oben im Viewport */
+    justify-content: center; /* Zentriert den Container horizontal im Viewport */
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "Lora", serif;
+    transform: scale(1.5);
+}
+
+p {
+    font-size: larger;
+}
+
+button {
+    color: black;
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    font-size: medium;
+}
+
+button:hover {
+    filter: brightness(85%);
+}
+
+button:active {
+    filter: brightness(70%);
+}
+
+input {
+    font-family: "Lora", serif;
+}
+
+.container {
+    position: relative; /* Ermöglicht die Nutzung von top für die vertikale Positionierung */
+    top: 30%; /* Verschiebt den Container 30% vom oberen Rand des Viewports */
+    display: flex;
+    flex-direction: column; /* Anordnung der Kinder untereinander */
+    align-items: center; /* Zentriert Kinder horizontal */
+}
+
+.input-field-and-button {
+    width: 35vw; /* Breite des Containers: 50% des Viewports */
+    display: flex;
+    align-items: center; /* Zentriert die Kinder vertikal im Container */
+}
+
+.input-field {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.checkbox-div input, .checkbox-div label {
+    cursor: pointer;
+}

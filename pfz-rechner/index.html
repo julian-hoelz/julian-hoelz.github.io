@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <title>Primfaktorzerlegungsrechner</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Primfaktorzerlegungsrechner</h1>
+            <div>
+                Gib hier eine Ganzzahl ein:
+                <div class="input-field-and-button">
+                    <input type="text" id="number-input" onkeydown="handleKeydownEvent(event);" oninput="handleInputEvent(event);" class="input-field">
+                    <button onclick="calculateAndPutPrimeFactorsString();">Primfaktoren berechnen</button>
+                </div>
+            </div>
+            <div class="checkbox-div">
+                <input type="checkbox" checked id="canonical-checkbox" onchange="canonicalCheckboxChanged();" style="margin-top: 18px;">
+                <label for="canonical-checkbox">Kanonisch</label>
+            </div>
+            <p id="result-paragraph"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

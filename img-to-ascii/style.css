@@ -1,0 +1,49 @@
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+img {
+    display: block;
+    max-width: 240px;
+    height: auto;
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    display: inline;
+}
+
+.placeholder {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    text-align: center;
+    width: 240px; /* Beispielbreite, kann angepasst werden */
+    height: auto; /* Beispielhöhe, kann angepasst werden */
+    color: #909090;
+}
+
+.hidden {
+    display: none;
+}
