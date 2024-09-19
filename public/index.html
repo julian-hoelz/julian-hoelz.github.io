@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Julian Hölz’ Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title" class="homepage-title"></h1>
+            <div id="language-selector" class="language-selector">
+                <div class="language" onmousedown="setLanguage('de', true);">
+                    <img src="img/flag/de.png" alt="Deutsch" class="flag">
+                    <p class="language-name">Deutsch</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('en', true);">
+                    <img src="img/flag/gb.png" alt="English" class="flag">
+                    <p class="language-name">English</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('eo', true);">
+                    <img src="img/flag/eo.png" alt="Esperanto" class="flag">
+                    <p class="language-name">Esperanto</p>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="text-div">
+                <p id="paragraph-1"></p>
+                <p id="paragraph-2"></p>
+            </div>
+        </div>
+        <div id="tab-button-container" class="tab-button-container">
+            <button id="tab-button-projects" onmousedown="openSection('projects', true);"></button>
+            <button id="tab-button-about-me" onmousedown="openSection('about-me', true);"></button>
+            <button id="tab-button-qualifications" onmousedown="openSection('qualifications', true);"></button>
+            <button id="tab-button-contact" onmousedown="openSection('contact', true);"></button>
+        </div>
+        <section id="section-projects">
+            <h2 id="heading-projects"></h2>
+            <div class="projects-grid">
+                <div id="project-tile-asteroids" class="project-tile-asteroids">
+                    <h3 id="project-tile-asteroids-heading"></h3>
+                    <img src="img/asteroids.png" alt="Asteroids-Bild">
+                    <p id="project-tile-asteroids-description"></p>
+                </div>
+                <div id="project-tile-mastermind" class="project-tile-mastermind">
+                    <h3 id="project-tile-mastermind-heading"></h3>
+                    <img src="img/mastermind.png" alt="Mastermind-Bild">
+                    <p id="project-tile-mastermind-description"></p>
+                </div>
+                <div id="project-tile-wanda" class="project-tile-wanda">
+                    <h3>Wanda</h3>
+                    <img src="img/wanda.png" alt="Wanda-Bild">
+                    <p id="project-tile-wanda-description"><p>
+                </div>
+                <div id="project-tile-pfz-rechner" class="project-tile-pfz-rechner">
+                    <h3 id="project-tile-pfz-rechner-heading"></h3>
+                    <img src="img/pfz-rechner.png" alt="Primfaktorzerlegungsrechner-Bild">
+                    <p id="project-tile-pfz-rechner-description"></p>
+                </div>
+                <div class="project-tile-projekt-5">
+                    <h3 id="project-tile-projekt-5-heading"></h3>
+                    <p id="project-tile-projekt-5-description"></p>
+                </div>
+                <div class="project-tile-projekt-6">
+                    <h3 id="project-tile-projekt-6-heading"></h3>
+                    <p id="project-tile-projekt-6-description"></p>
+                </div>
+            </div>
+        </section>
+        <section id="section-about-me">
+            <div class="container">
+                <div class="section-div-about-me">
+                    <h2 id="heading-about-me"></h2>
+                    <p id="about-me-paragraph-1"></p>
+                    <h3 id="about-me-heading-1"></h3>
+                    <p id="about-me-paragraph-2"></p>
+                    <h3 id="about-me-heading-2"></h3>
+                    <p id="about-me-paragraph-3"></p>
+                    <h3>Esperanto</h3>
+                    <p id="about-me-paragraph-4"></p>
+                    <h3 id="about-me-heading-4"></h3>
+                    <p id="about-me-paragraph-5"></p>
+                </div>
+            </div>
+        </section>
+        <section id="section-qualifications">
+            <div class="container">
+                <div class="section-div-qualifications">
+                    <h2 id="heading-qualifications"></h2>
+                    <h3 id="qualifications-heading-it-skills"></h3>
+                    <h4 id="qualifications-heading-programming-languages"></h4>
+                    <p>Python <span class="highlight">●●●●○</span> — Java <span class="highlight">●●●○○</span> — JavaScript <span class="highlight">●●○○○</span></p>
+                    <p>PHP <span class="highlight">●●○○○</span> — SQL <span class="highlight">●●○○○</span></p>
+                    <h4 id="qualifications-heading-operating-systems"></h4>
+                    <p>Windows <span class="highlight">●●●●○</span> — Ubuntu <span class="highlight">●●○○○</span> — Debian <span class="highlight">●●○○○</span></p>
+                    <h4>Microsoft Office</h4>
+                    <p>Word <span class="highlight">●●●●○</span> — Excel <span class="highlight">●●●○○</span> — PowerPoint <span class="highlight">●●●○○</span></p>
+                    <h3 id="qualifications-heading-languages"></h3>
+                    <h4 id="qualifications-heading-german"></h4>
+                    <p id="qualifications-paragraph-native-language"></p>
+                    <h4 id="qualifications-heading-english"></h4>
+                    <p>C1 (<a id="qualifications-anker-certificate" href="https://cert.efset.org/WuTmCq" target="_blank"></a>)</p>
+                    <h4>Esperanto</h4>
+                    <p id="qualifications-paragraph-good-knowledge"></p>
+                </div>
+            </div>
+        </section>
+        <section id="section-contact">
+            <div class="container">
+                <div class="section-div-contact">
+                    <h2 id="heading-contact"></h2>
+                    <p id="contact-paragraph-1"></p>
+                    <p id="contact-paragraph-2"></p>
+                    <a href="mailto:julianhoelz@outlook.com" id="mail-button" class="link-button" target="_blank" style="margin-top: 11px;"></a>
+                </div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
+</html>
