@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Conways Spiel des Lebens</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="language-selector" class="language-selector">
+                <div class="language" onmousedown="setLanguage('de', true);">
+                    <img src="img/flag/de.png" alt="Deutsch" class="flag">
+                    <p class="language-name">Deutsch</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('en', true);">
+                    <img src="img/flag/gb.png" alt="English" class="flag">
+                    <p class="language-name">English</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('eo', true);">
+                    <img src="img/flag/eo.png" alt="Esperanto" class="flag">
+                    <p class="language-name">Esperanto</p>
+                </div>
+            </div>
+            <div class="project-div-math-game">
+                <h1>Rechenspiel für den Aktionstag</h1>
+                <h2>Bildergalerie<h2>
+                <div class="gallery">
+                    <img src="img/image-coming-soon.png" alt="Math game image 1" onclick="openLightbox(); currentSlide(0);" style="max-width: 460px;">
+                    <img src="img/image-coming-soon.png" alt="Math game image 2" onclick="openLightbox(); currentSlide(1);">
+                    <img src="img/image-coming-soon.png" alt="Math game image 3" onclick="openLightbox(); currentSlide(2);">
+                    <img src="img/image-coming-soon.png" alt="Math game image 4" onclick="openLightbox(); currentSlide(3);">
+                    <img src="img/image-coming-soon.png" alt="Math game image 5" onclick="openLightbox(); currentSlide(4);">
+                    <img src="img/image-coming-soon.png" alt="Math game image 6" onclick="openLightbox(); currentSlide(5);">
+                </div>
+                <h2>Erklärung</h2>
+                <p>
+                    Am 13.11.2024 war Aktionstag im bbw Südhessen, meinem Ausbildungsbetrieb. Um denjenigen Schülern, die sich für die
+                    Informatik interessieren, einen Einblick in die Programmierung zu geben, hatte ich im Vorfeld dieses Rechenspiel
+                    programmiert. Das Ziel des Spiels ist es, in möglichst kurzer Zeit zehn Rechenaufgaben zu lösen. Wer besonders
+                    schnell ist, kann sich einen Platz auf der Bestenliste sichern.
+                </p>
+                <h2>Sprache</h2>
+                <p>Python (Pygame)</p>
+                <h2>GitHub</h2>
+                <a href="https://github.com/julian-hoelz" target="_blank" class="image-link">
+                    <img src="img/github.png" alt="GitHub image">
+                    <p>Zum Repository</p>
+                </a>
+                <hr>
+                <button id="button-back-to-homepage" class="back-button" onclick="backToHomepage();">Zurück zur Startseite</button>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox();">&times;</span>
+            <div class="lightbox-content">
+                <div class="slides">
+                    <img src="img/image-coming-soon.png" alt="Math game image 1">
+                    <p class="description">Beschreibung kommt bald.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/image-coming-soon.png" alt="Math game image 2">
+                    <p class="description">Beschreibung kommt bald.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/image-coming-soon.png" alt="Math game image 3">
+                    <p class="description">Beschreibung kommt bald.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/image-coming-soon.png" alt="Math game image 4">
+                    <p class="description">Beschreibung kommt bald.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/image-coming-soon.png" alt="Math game image 5">
+                    <p class="description">Beschreibung kommt bald.</p>
+                </div>
+                <div class="slides">
+                    <img src="img/image-coming-soon.png" alt="Math game image 6">
+                    <p class="description">Beschreibung kommt bald.</p>
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+        <script src="js/math-game-script.js"></script>
+    </body>
+</html>

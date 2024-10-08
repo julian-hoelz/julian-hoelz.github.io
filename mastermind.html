@@ -27,7 +27,7 @@
         </div>
         <div class="project-div-mastermind">
             <h1 id="title"></h1>
-            <img src="img/mastermind.gif" alt="Mastermind-GIF" width="250">
+            <img src="img/mastermind.gif" alt="Mastermind-GIF" width="250" class="preview-img">
             <h2 id="heading-game-description"></h2>
             <p id="paragraph-game-description-1"></p>
             <p id="paragraph-game-description-2"></p>
@@ -37,9 +37,12 @@
             <h2 id="heading-language"></h2>
             <p>Python 3</p>
             <h2>GitHub</h2>
-            <button id="button-to-repository" class="mail-button"></button>
+            <a href="https://github.com/julian-hoelz" target="_blank" class="image-link">
+                <img src="img/github.png" alt="GitHub image">
+                <p>Zum Repository</p>
+            </a>
             <hr>
-            <button id="button-back-to-homepage" class="back-button" onclick="history.back();"></button>
+            <button id="button-back-to-homepage" class="back-button" onclick="backToHomepage();"></button>
         </div>
     </div>
     <script src="js/mastermind-script.js"></script>

@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  background-color: #add8e6;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+canvas {
+  width: calc(100vw - 40px);
+  height: calc(100vh - 150px - 50px - 40px);
+}
+
+.control-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.control-panel button, .control-panel select {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.control-panel input[type=range] {
+  width: 150px;
+}
+.control-panel .start-stop-button {
+  width: 70px;
+}
+
+.center-text {
+  width: 100%;
+  text-align: center;
+}
+.center-text p {
+  font-size: large;
+}
+
+/*# sourceMappingURL=style.css.map */

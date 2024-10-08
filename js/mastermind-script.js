@@ -76,7 +76,7 @@ function applyLanguage(language) {
     document.getElementById("paragraph-game-description-2").textContent = translation.paragraphGameDescription2;
     document.getElementById("paragraph-game-description-3").textContent = translation.paragraphGameDescription3;
     document.getElementById("paragraph-how-to-play").innerHTML = translation.paragraphHowToPlay;
-    document.getElementById("button-to-repository").textContent = translation.toRepositoryButton;
+    // document.getElementById("button-to-repository").textContent = translation.toRepositoryButton;
     document.getElementById("button-back-to-homepage").textContent = translation.backToHomepageButton;
 }
 
@@ -84,6 +84,15 @@ function addToUrl(key, value) {
     const currentUrl = new URL(location.href);
     currentUrl.searchParams.set(key, value);
     history.replaceState({}, "", currentUrl);
+}
+
+function backToHomepage() {
+    let href = "index.html";
+    const urlParams = new URLSearchParams(location.search);
+    const language = urlParams.get("lang");
+    if (language)
+        href += "?lang=" + language;
+    location.href = href;
 }
 
 setLanguageOnLoad();

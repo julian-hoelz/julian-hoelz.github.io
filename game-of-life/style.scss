@@ -1,0 +1,52 @@
+$body-padding: 20px;
+$title-height: 50px;
+
+$background_color: #add8e6;
+
+body {
+    margin: 0;
+    padding: 0;
+    padding: $body-padding;
+    background-color: $background_color;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    height: $title-height;
+}
+
+canvas {
+    width: calc(100vw - $body-padding * 2);
+    height: calc(100vh - 150px - $title-height - $body-padding * 2);
+}
+
+.control-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    button, select {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    input[type="range"] {
+        width: 150px;
+    }
+
+    .start-stop-button {
+        width: 70px;
+    }
+}
+
+.center-text {
+    width: 100%;
+    text-align: center;
+
+    p {
+        font-size: large;
+    }
+}

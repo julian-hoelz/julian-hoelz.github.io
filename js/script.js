@@ -11,30 +11,34 @@ const translations = {
         contactHeading: "Kontakt",
         ptAsteroids: { // pt = project tile
             heading: "Asteroids",
-            description: "Ein vollumfänglicher Klon des Arcade-Spiels Asteroids!"
+            description: "Ein vollumfänglicher Klon des Arcade-Spiels Asteroids."
+        },
+        ptGameOfLife: {
+            heading: "Spiel des Lebens",
+            description: "Conways Spiel des Lebens direkt im Browser."
+        },
+        ptWandaDescription: "Eine Webanwendung für digitale Ausbildungsnachweise.",
+        ptMathGame: {
+            heading: "Rechenspiel für den Aktionstag",
+            description: "Ein Rechenspiel für den Aktionstag des bbw Südhessen 2024."
         },
         ptMastermind: {
             heading: "Mastermind in der Konsole",
-            description: "Das beliebte Spiel Mastermind in der Konsole!"
+            description: "Das beliebte Spiel Mastermind in der Konsole."
         },
-        ptWandaDescription: "Eine Webanwendung für digitale Ausbildungsnachweise.",
-        ptPfzRechner: {
+        ptPfCalculator: {
             heading: "Primfaktorzerlegungsrechner",
             description: "Eine einfache Webanwendung zur Primfaktorzerlegung einer Zahl."
         },
-        project: "Projekt",
-        comingSoon: "Demnächst",
         aboutMeParagraph: "Hier steht etwas über mich.",
         aboutMe: {
             heading1: "Ausbildung",
             heading2: "Freizeit",
-            heading4: "Lebenslauf",
             paragraph1: "Hi, ich bin Julian Hölz und ich entwickle für mein Leben gern Software.",
             paragraph2BeforeLink: "In meiner Ausbildung zum Fachinformatiker: Fachrichtung Anwendungsentwicklung im ",
-            paragraph2AfterLink: " lerne jeden Tag Neues zum Thema Softwareentwicklung.",
+            paragraph2AfterLink: " lerne ich jeden Tag Neues zum Thema Softwareentwicklung.",
             paragraph3: "In meiner Freizeit entwickle ich Websites, Spiele, Konsolenanwendungen und mehr. Meistens schreibe ich in Python. Für das Hochgefühl, ein schwieriges Problem gelöst zu haben, nehme ich einige Anstrengung in Kauf.",
-            paragraph4: "Warum du diese Seite auf Esperanto stellen kannst, fragst du dich vielleicht? Nun, diese Sprache habe ich aus persönlichem Interesse privat gelernt und spreche sie heute auf einem guten Niveau.",
-            paragraph5: "Du möchtest mehr über mich erfahren? Dann lade dir gerne meinen Lebenslauf herunter."
+            paragraph4: "Warum du diese Seite auf Esperanto stellen kannst, fragst du dich vielleicht? Nun, diese Sprache habe ich aus persönlichem Interesse privat gelernt und spreche sie heute auf einem guten Niveau."
         },
         qualifications: {
             itSkills: "EDV-Kenntnisse",
@@ -45,7 +49,8 @@ const translations = {
             nativeLanguage: "Muttersprache",
             english: "Englisch",
             certificate: "Zertifikat",
-            goodKnowledge: "Gute Kenntnisse"
+            goodKnowledge: "Gute Kenntnisse",
+            codeGolfProfile: "Mein Code.Golf-Profil"
         },
         contact: {
             paragraph1: "Du hast Fragen oder bist an einer Zusammenarbeit interessiert?",
@@ -63,30 +68,34 @@ const translations = {
         contactHeading: "Contact",
         ptAsteroids: {
             heading: "Asteroids",
-            description: "A full-scale clone of the arcade game Asteroids!"
+            description: "A full-scale clone of the arcade game Asteroids."
+        },
+        ptGameOfLife: {
+            heading: "Game of Life",
+            description: "Conway’s Game of Life directly in the browser."
+        },
+        ptWandaDescription: "A German web application for digital training records.",
+        ptMathGame: {
+            heading: "Maths Game for the Action Day",
+            description: "A maths game for the action day at bbw Südhessen 2024."
         },
         ptMastermind: {
             heading: "Mastermind in the Console",
-            description: "The popular game Mastermind in the console!"
+            description: "The popular game Mastermind in the console."
         },
-        ptWandaDescription: "A German web application for digital training records.",
-        ptPfzRechner: {
+        ptPfCalculator: {
             heading: "Prime Factorisation Calculator",
             description: "A simple web application for the prime factorisation of a number."
         },
-        project: "Project",
-        comingSoon: "Coming soon",
         aboutMeParagraph: "Here is something about me.",
         aboutMe: {
             heading1: "Education",
             heading2: "Free Time",
-            heading4: "CV",
             paragraph1: "Hi, I’m Julian Hölz and I love developing software.",
             paragraph2BeforeLink: "During my training as an IT specialist in application development at ",
             paragraph2AfterLink: ", I learn something new about software development every day.",
             paragraph3: "In my free time, I develop websites, games, console applications, and more. I mostly code in Python. For the thrill of solving a tough problem, I’m willing to put in some serious effort.",
-            paragraph4: "Wondering why you can switch this page to Esperanto? Well, I learned this language privately out of personal interest, and today I speak it at a good level.",
-            paragraph5: "Want to know more about me? Feel free to download my CV."
+            paragraph4: "Wondering why you can switch this page to Esperanto? Well, I learned this language privately out of personal interest, and today I speak it at a good level."
         },
         qualifications: {
             itSkills: "IT Skills",
@@ -97,7 +106,8 @@ const translations = {
             nativeLanguage: "Native language",
             english: "English",
             certificate: "Certificate",
-            goodKnowledge: "Good knowledge"
+            goodKnowledge: "Good knowledge",
+            codeGolfProfile: "My Code.Golf profile"
         },
         contact: {
             paragraph1: "Do you have any questions or are you interested in a collaboration?",
@@ -115,30 +125,34 @@ const translations = {
         contactHeading: "Kontakto",
         ptAsteroids: {
             heading: "Asteroids",
-            description: "Plenampleksa kopio de la videoludeja ludo Asteroids!"
+            description: "Plenampleksa kopio de la videoludeja ludo Asteroids."
+        },
+        ptGameOfLife: {
+            heading: "La ludo de la vivo",
+            description: "La ludo de la vivo far Conway rekte en la retumilo."
+        },
+        ptWandaDescription: "Germana retaplikaĵo por ciferecaj staĝoraportoj.",
+        ptMathGame: {
+            heading: "Kalkulada ludo por la agotago",
+            description: "Kalkulada ludo por la agotago de la bbw Südhessen 2024."
         },
         ptMastermind: {
             heading: "Mastermind en la terminalo",
-            description: "La populara ludo Mastermind en la terminalo!"
+            description: "La populara ludo Mastermind en la terminalo."
         },
-        ptWandaDescription: "Germana retaplikaĵo por ciferecaj staĝoraportoj.",
-        ptPfzRechner: {
+        ptPfCalculator: {
             heading: "Primfaktoriga kalkulilo",
             description: "Simpla retaplikaĵo por la primfaktorigo de nombro."
         },
-        project: "Projekto",
-        comingSoon: "Venos baldaŭ",
         aboutMeParagraph: "Jen io pri mi.",
         aboutMe: {
             heading1: "Staĝo",
             heading2: "Libertempo",
-            heading4: "Vivhistorio",
             paragraph1: "Saluton, mi estas Julian Hölz kaj mi pasie disvolvas programarojn.",
             paragraph2BeforeLink: "Dum mia staĝo al fakulo pri informadiko, specialiĝanta en aplikaĵdisvolvado, ĉe la ",
             paragraph2AfterLink: ", mi lernas novajn aferojn pri programara disvolvado ĉiutage.",
             paragraph3: "En mia libertempo mi disvolvas retejojn, ludojn, terminalaplikaĵojn kaj pli. Plej ofte mi verkas en Python. Por la ĝojo solvi malfacilan problemon, mi akceptas iom da penoj.",
-            paragraph4: "Ĉu vi scivolas, kial vi povas elekti Esperanton por ĉi tiu paĝo? Nu, mi lernis tiun ĉi lingvon private pro persona intereso, kaj hodiaŭ mi parolas ĝin sur alta nivelo.",
-            paragraph5: "Ĉu vi volas ekscii pli pri mi? Bonvolu elŝuti mian vivhistorion!"
+            paragraph4: "Ĉu vi scivolas, kial vi povas elekti Esperanton por ĉi tiu paĝo? Nu, mi lernis tiun ĉi lingvon private pro persona intereso, kaj hodiaŭ mi parolas ĝin sur alta nivelo."
         },
         qualifications: {
             itSkills: "Komputilaj kapabloj",
@@ -149,7 +163,8 @@ const translations = {
             nativeLanguage: "Denaska lingvo",
             english: "Angla",
             certificate: "Atestilo",
-            goodKnowledge: "Bonaj scioj"
+            goodKnowledge: "Bonaj scioj",
+            codeGolfProfile: "Mia Code.Golf-konto"
         },
         contact: {
             paragraph1: "Ĉu vi havas demandojn aŭ interesas vin kunlaboro? Simple sendu al mi retpoŝtmesaĝon.",
@@ -206,23 +221,21 @@ function applyLanguage(language) {
     document.getElementById("heading-contact").textContent = translation.contactHeading;
     document.getElementById("project-tile-asteroids-heading").textContent = translation.ptAsteroids.heading;
     document.getElementById("project-tile-asteroids-description").textContent = translation.ptAsteroids.description;
+    document.getElementById("project-tile-game-of-life-heading").textContent = translation.ptGameOfLife.heading;
+    document.getElementById("project-tile-game-of-life-description").textContent = translation.ptGameOfLife.description;
+    document.getElementById("project-tile-wanda-description").textContent = translation.ptWandaDescription;
+    document.getElementById("project-tile-math-game-heading").textContent = translation.ptMathGame.heading;
+    document.getElementById("project-tile-math-game-description").textContent = translation.ptMathGame.description;
     document.getElementById("project-tile-mastermind-heading").textContent = translation.ptMastermind.heading;
     document.getElementById("project-tile-mastermind-description").textContent = translation.ptMastermind.description;
-    document.getElementById("project-tile-wanda-description").textContent = translation.ptWandaDescription;
-    document.getElementById("project-tile-pfz-rechner-heading").textContent = translation.ptPfzRechner.heading;
-    document.getElementById("project-tile-pfz-rechner-description").textContent = translation.ptPfzRechner.description;
-    document.getElementById("project-tile-projekt-5-heading").textContent = translation.project + " 5";
-    document.getElementById("project-tile-projekt-5-description").textContent = translation.comingSoon;
-    document.getElementById("project-tile-projekt-6-heading").textContent = translation.project + " 6";
-    document.getElementById("project-tile-projekt-6-description").textContent = translation.comingSoon;
+    document.getElementById("project-tile-pf-calculator-heading").textContent = translation.ptPfCalculator.heading;
+    document.getElementById("project-tile-pf-calculator-description").textContent = translation.ptPfCalculator.description;
     document.getElementById("about-me-heading-1").textContent = translation.aboutMe.heading1;
     document.getElementById("about-me-heading-2").textContent = translation.aboutMe.heading2;
-    document.getElementById("about-me-heading-4").textContent = translation.aboutMe.heading4;
     document.getElementById("about-me-paragraph-1").textContent = translation.aboutMe.paragraph1;
     document.getElementById("about-me-paragraph-2").innerHTML = aboutMeParagraph2HTML;
     document.getElementById("about-me-paragraph-3").textContent = translation.aboutMe.paragraph3;
     document.getElementById("about-me-paragraph-4").textContent = translation.aboutMe.paragraph4;
-    document.getElementById("about-me-paragraph-5").textContent = translation.aboutMe.paragraph5;
     document.getElementById("qualifications-heading-it-skills").textContent = translation.qualifications.itSkills;
     document.getElementById("qualifications-heading-programming-languages").textContent = translation.qualifications.programmingLanguages;
     document.getElementById("qualifications-heading-operating-systems").textContent = translation.qualifications.operatingSystems;
@@ -232,6 +245,7 @@ function applyLanguage(language) {
     document.getElementById("qualifications-heading-english").textContent = translation.qualifications.english;
     document.getElementById("qualifications-anker-certificate").textContent = translation.qualifications.certificate;
     document.getElementById("qualifications-paragraph-good-knowledge").textContent = translation.qualifications.goodKnowledge;
+    document.getElementById("qualifications-paragraph-code-golf").textContent = translation.qualifications.codeGolfProfile;
     document.getElementById("contact-paragraph-1").textContent = translation.contact.paragraph1;
     document.getElementById("contact-paragraph-2").textContent = translation.contact.paragraph2;
     document.getElementById("mail-button").textContent = translation.contact.mailButton;
@@ -284,6 +298,8 @@ setLanguageOnLoad();
 openSectionOnLoad();
 
 document.getElementById("project-tile-asteroids").addEventListener("click", () => { openPage("asteroids.html"); });
-document.getElementById("project-tile-mastermind").addEventListener("click", () => { openPage("mastermind.html"); });
+document.getElementById("project-tile-game-of-life").addEventListener("click", () => { openPage("game-of-life.html") });
 document.getElementById("project-tile-wanda").addEventListener("click", () => { openPage("wanda.html"); });
-document.getElementById("project-tile-pfz-rechner").addEventListener("click", () => { openPage("pfz-rechner.html"); });
+document.getElementById("project-tile-math-game").addEventListener("click", () => { openPage("math-game.html") });
+document.getElementById("project-tile-mastermind").addEventListener("click", () => { openPage("mastermind.html"); });
+document.getElementById("project-tile-pf-calculator").addEventListener("click", () => { openPage("pf-calculator.html"); });

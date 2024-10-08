@@ -8,9 +8,6 @@ function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
 }
 
-let currentSlideIndex = 1;
-showSlides(currentSlideIndex);
-
 // Ändert das aktuelle Bild
 function changeSlide(n) {
     showSlides(currentSlideIndex += n);
@@ -43,9 +40,14 @@ function showSlides(n) {
     slides[currentSlideIndex].style.display = "block";
 }
 
-// document.getElementById("asteroids-tile").addEventListener("click", function() {
-//     window.location.href = "asteroids.html"; // Die URL, zu der du weiterleiten möchtest
-// });
-// document.getElementById("mastermind-tile").addEventListener("click", function() {
-//     window.location.href = "mastermind.html"; // Die URL, zu der du weiterleiten möchtest
-// });
+function backToHomepage() {
+    let href = "index.html";
+    const urlParams = new URLSearchParams(location.search);
+    const language = urlParams.get("lang");
+    if (language)
+        href += "?lang=" + language;
+    location.href = href;
+}
+
+let currentSlideIndex = 1;
+showSlides(currentSlideIndex);
