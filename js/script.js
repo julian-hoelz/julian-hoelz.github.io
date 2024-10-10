@@ -208,6 +208,7 @@ function setLanguage(language, addLangToUrl) {
 function applyLanguage(language) {
     const translation = translations[language];
     const aboutMeParagraph2HTML = translation.aboutMe.paragraph2BeforeLink + linkToBbwSh + translation.aboutMe.paragraph2AfterLink;
+    document.title = translation.title;
     document.getElementById("title").textContent = translation.title;
     document.getElementById("paragraph-1").textContent = translation.paragraph1;
     document.getElementById("paragraph-2").textContent = translation.paragraph2;

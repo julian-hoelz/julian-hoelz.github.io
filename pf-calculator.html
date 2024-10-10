@@ -5,30 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <title>Primfaktorzerlegungsrechner</title>
     </head>
     <body>
         <div class="container">
+            <div id="language-selector" class="language-selector">
+                <div class="language" onmousedown="setLanguage('de', true);">
+                    <img src="img/flag/de.png" alt="Deutsch" class="flag">
+                    <p class="language-name">Deutsch</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('en', true);">
+                    <img src="img/flag/gb.png" alt="English" class="flag">
+                    <p class="language-name">English</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('eo', true);">
+                    <img src="img/flag/eo.png" alt="Esperanto" class="flag">
+                    <p class="language-name">Esperanto</p>
+                </div>
+            </div>
             <div class="project-div-pf-calculator">
-                <h1>Primfaktorzerlegungsrechner</h1>
+                <h1 id="title"></h1>
                 <img src="img/pf-calculator-2.png" alt="Primfaktorzerlegungsrechner-Bild" width="100%" class="preview-img">
-                <h2>Beschreibung</h2>
-                <p>
-                    Mein Primfaktorzerlegungsrechner ist eine einfache Webanwendung, mit der du die Primfaktoren einer Zahl
-                    berechnen kannst. Jede Zahl hat eine einzige Multimenge an Primfaktoren, die du mit diesem Rechner finden
-                    kannst. Du kannst den Rechner auf dem unten stehenden Link ausprobieren.
-                </p>
-                <h2>Link</h2>
-                <p>Hier geht’s zu meinem <a href="pf-calculator/index.html" target="_blank">Primfaktorzerlegungsrechner</a>.</p>
-                <h2>Sprachen</h2>
+                <h2 id="heading-description"></h2>
+                <p id="paragraph-description"></p>
+                <h2 id="heading-link"></h2>
+                <p id="paragraph-link"></p>
+                <h2 id="heading-language"></h2>
                 <p>HTML, Sass, TypeScript</p>
                 <h2>GitHub</h2>
-                <a href="https://github.com/julian-hoelz" target="_blank" class="image-link">
+                <a href="https://github.com/julian-hoelz/pf-calculator" target="_blank" class="image-link">
                     <img src="img/github.png" alt="GitHub image">
-                    <p>Zum Repository</p>
+                    <p id="paragraph-to-repository"></p>
                 </a>
                 <hr>
-                <button class="back-button" onclick="backToHomepage();">Zurück zur Startseite</button>
+                <button id="button-back-to-homepage" class="back-button" onclick="backToHomepage();"></button>
             </div>
         </div>
         <script src="js/pf-calculator-script.js"></script>
