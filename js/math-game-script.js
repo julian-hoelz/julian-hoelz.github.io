@@ -24,7 +24,7 @@ const translations = {
         imageGallery: "Bildgalerio",
         imageGalleryHint: "Alklaku la bildojn por vidi ilin grandaj kaj kun priskriboj.",
         explanation: "Klarigo",
-        explanationParagraph: "La 13-an de Novembro 2024 estis agotago en la bbw Südhessen, mia staĝofirmao. Por doni al la lernejanoj, kiuj interesiĝas pri la informadiko, enrigardon en la programadon, mi antaŭe programis ĉi tiun kalkuladan ludon. La celo de la ludo estas solvi dek kalkulproblemojn en kiel eble malplej da tempo. Kiu estas aparte rapida, povas sekurigi lokon en la rangaro.",
+        explanationParagraph: "La 13-an de Novembro 2024 estis agotago en bbw Südhessen, mia staĝofirmao. Por doni al la lernejanoj, kiuj interesiĝas pri la informadiko, enrigardon en la programadon, mi antaŭe programis ĉi tiun kalkuladan ludon. La celo de la ludo estas solvi dek kalkulproblemojn en kiel eble malplej da tempo. Kiu estas aparte rapida, povas sekurigi lokon en la rangaro.",
         language: "Lingvo",
         toRepository: "Al la deponejo",
         backToHomepage: "Reen al la hejmpaĝo"

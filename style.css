@@ -6,8 +6,19 @@ body {
     background: #f0f0f0;
 }
 
-header, .container {
+header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -20,6 +31,8 @@ section {
 
 .homepage-title {
     margin: 0;
+    flex-grow: 1;
+    text-align: center;
 }
 
 button {
@@ -84,12 +97,12 @@ a.link-button:active,
     margin: 0 4.2vw;
 }
 
+.project-tile-db-delay-charts,
 .project-tile-asteroids,
 .project-tile-game-of-life,
 .project-tile-wanda,
 .project-tile-math-game,
-.project-tile-mastermind,
-.project-tile-pf-calculator {
+.project-tile-mastermind {
     border: 2px solid #6c77a2;
     border-radius: 20px;
     padding: 10px 30px;
@@ -100,32 +113,32 @@ a.link-button:active,
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
 }
 
+.project-tile-db-delay-charts:hover,
 .project-tile-asteroids:hover,
 .project-tile-game-of-life:hover,
 .project-tile-wanda:hover,
 .project-tile-math-game:hover,
-.project-tile-mastermind:hover,
-.project-tile-pf-calculator:hover {
+.project-tile-mastermind:hover {
     border-color: black;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
+.project-tile-db-delay-charts:hover h3,
 .project-tile-asteroids:hover h3,
 .project-tile-game-of-life:hover h3,
 .project-tile-wanda:hover h3,
 .project-tile-math-game:hover h3,
-.project-tile-mastermind:hover h3,
-.project-tile-pf-calculator:hover h3 {
+.project-tile-mastermind:hover h3 {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
+.project-tile-db-delay-charts img,
 .project-tile-asteroids img,
 .project-tile-game-of-life img,
 .project-tile-wanda img,
 .project-tile-math-game img,
-.project-tile-mastermind img,
-.project-tile-pf-calculator img {
+.project-tile-mastermind img {
     width: 100%;
     border: 2px solid #6c77a2;
     display: block;
@@ -133,13 +146,17 @@ a.link-button:active,
     box-sizing: border-box;
 }
 
+.project-tile-db-delay-charts:hover img,
 .project-tile-asteroids:hover img,
 .project-tile-game-of-life:hover img,
 .project-tile-wanda:hover img,
 .project-tile-math-game:hover img,
-.project-tile-mastermind:hover img,
-.project-tile-pf-calculator:hover img {
+.project-tile-mastermind:hover img {
     border-color: black;
+}
+
+.project-tile-db-delay-charts {
+    background-color: #edd3d8;
 }
 
 .project-tile-asteroids {
@@ -147,7 +164,7 @@ a.link-button:active,
 }
 
 .project-tile-game-of-life {
-    background-color: #edd3d8;
+    background-color: #ecd2be;
 }
 
 .project-tile-wanda {
@@ -162,16 +179,12 @@ a.link-button:active,
     background-color: #dccce6;
 }
 
-.project-tile-pf-calculator {
-    background-color: #ecd2be;
-}
-
 .info-div {
     margin-top: 130px;
 }
 
 .gallery img {
-    max-width: 150px;
+    width: 150px;
     margin: 10px;
     cursor: pointer;
     border: 1px solid #6c77a2;
@@ -199,7 +212,7 @@ a.link-button:active,
     margin: auto;
     top: 10%;
     width: 80%;
-    max-width: 900px;
+    max-width: 700px;
 }
 
 .slides {
@@ -245,34 +258,32 @@ a.link-button:active,
     right: 0;
 }
 
+.project-div-db-delay-charts,
 .project-div-asteroids,
 .project-div-game-of-life,
 .project-div-wanda,
 .project-div-math-game,
 .project-div-mastermind,
-.project-div-pf-calculator,
 .section-div-about-me,
 .section-div-qualifications,
 .section-div-contact {
-    width: 666px;
+    max-width: 666px;
     padding: 5px 40px 20px 40px;
     border: 2px solid #6c77a2;
     border-radius: 20px;
     box-sizing: border-box;
 }
 
+.project-div-db-delay-charts .preview-img,
 .project-div-game-of-life .preview-img,
 .project-div-math-game .preview-img,
-.project-div-mastermind .preview-img,
-.project-div-pf-calculator .preview-img {
+.project-div-mastermind .preview-img {
     border: 2px solid #6c77a2;
     border-radius: 20px;
     box-sizing: border-box;
 }
 
-.project-div-game-of-life img,
-.project-div-math-game img,
-.project-div-pf-calculator img {
+.project-div-game-of-life img {
     width: 100%;
 }
 
@@ -299,9 +310,13 @@ a.link-button:active,
 }
 
 .text-div {
-    width: 580px;
+    max-width: 580px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+}
+
+.project-div-db-delay-charts {
+    background-color: #edd3d8;
 }
 
 .project-div-asteroids {
@@ -309,7 +324,7 @@ a.link-button:active,
 }
 
 .project-div-game-of-life {
-    background-color: #edd3d8;
+    background-color: #ecd2be;
 }
 
 .project-div-wanda {
@@ -322,10 +337,6 @@ a.link-button:active,
 
 .project-div-mastermind {
     background-color: #dccce6;
-}
-
-.project-div-pf-calculator {
-    background-color: #ecd2be;
 }
 
 .section-div-about-me {
@@ -462,5 +473,16 @@ a.link-button:active,
 @media (max-width: 910px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        flex-direction: column;
+    }
+
+    .language-selector {
+        position: relative;
+        margin-bottom: 15px;
     }
 }

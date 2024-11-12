@@ -3,13 +3,17 @@ const linkToBbwSh = '<a href="https://www.bbw-suedhessen.de" target="_blank">Ber
 const translations = {
     de: {
         title: "Julian Hölz’ Portfolio",
-        paragraph1: "Willkommen auf meiner Portfolio-Seite! Hier stelle ich eine Auswahl meiner bisherigen Softwareentwicklungsprojekte sowie mich selbst vor.",
+        paragraph1: "Willkommen auf meiner Portfolioseite! Hier stelle ich eine Auswahl meiner bisherigen Softwareentwicklungsprojekte sowie mich selbst vor.",
         paragraph2: "Du kannst die Projektkacheln anklicken, um auf eine Seite mit allen wichtigen Details zu gelangen.",
         projectsHeading: "Meine Projekte",
         aboutMeHeading: "Über mich",
         qualificationsHeading: "Qualifikationen",
         contactHeading: "Kontakt",
-        ptAsteroids: { // pt = project tile
+        ptDbDelayCharts: { // pt = project tile
+            heading: "DB-Verspätungsdiagramme",
+            description: "Verspätungen der Deutschen Bahn visualisiert."
+        },
+        ptAsteroids: {
             heading: "Asteroids",
             description: "Ein vollumfänglicher Klon des Arcade-Spiels Asteroids."
         },
@@ -25,10 +29,6 @@ const translations = {
         ptMastermind: {
             heading: "Mastermind in der Konsole",
             description: "Das beliebte Spiel Mastermind in der Konsole."
-        },
-        ptPfCalculator: {
-            heading: "Primfaktorzerlegungsrechner",
-            description: "Eine einfache Webanwendung zur Primfaktorzerlegung einer Zahl."
         },
         aboutMeParagraph: "Hier steht etwas über mich.",
         aboutMe: {
@@ -54,7 +54,7 @@ const translations = {
         },
         contact: {
             paragraph1: "Du hast Fragen oder bist an einer Zusammenarbeit interessiert?",
-            paragraph2: "Schreib mir einfach eine Mail. Ich freue mich von dir zu hören und antworte zuverlässig!",
+            paragraph2: "Schreib mir einfach eine Mail. Ich freue mich, von dir zu hören, und antworte zuverlässig!",
             mailButton: "Mail an mich"
         }
     },
@@ -66,6 +66,10 @@ const translations = {
         aboutMeHeading: "About Me",
         qualificationsHeading: "Qualifications",
         contactHeading: "Contact",
+        ptDbDelayCharts: {
+            heading: "DB Delay Charts",
+            description: "Deutsche Bahn delays visualised."
+        },
         ptAsteroids: {
             heading: "Asteroids",
             description: "A full-scale clone of the arcade game Asteroids."
@@ -82,10 +86,6 @@ const translations = {
         ptMastermind: {
             heading: "Mastermind in the Console",
             description: "The popular game Mastermind in the console."
-        },
-        ptPfCalculator: {
-            heading: "Prime Factorisation Calculator",
-            description: "A simple web application for the prime factorisation of a number."
         },
         aboutMeParagraph: "Here is something about me.",
         aboutMe: {
@@ -123,6 +123,10 @@ const translations = {
         aboutMeHeading: "Pri mi",
         qualificationsHeading: "Kvalifikoj",
         contactHeading: "Kontakto",
+        ptDbDelayCharts: {
+            heading: "DB-malfruodiagramoj",
+            description: "Malfruoj de Deutsche Bahn bildigitaj."
+        },
         ptAsteroids: {
             heading: "Asteroids",
             description: "Plenampleksa kopio de la videoludeja ludo Asteroids."
@@ -134,15 +138,11 @@ const translations = {
         ptWandaDescription: "Germana retaplikaĵo por ciferecaj staĝoraportoj.",
         ptMathGame: {
             heading: "Kalkulada ludo por la agotago",
-            description: "Kalkulada ludo por la agotago de la bbw Südhessen 2024."
+            description: "Kalkulada ludo por la agotago de bbw Südhessen 2024."
         },
         ptMastermind: {
             heading: "Mastermind en la terminalo",
             description: "La populara ludo Mastermind en la terminalo."
-        },
-        ptPfCalculator: {
-            heading: "Primfaktoriga kalkulilo",
-            description: "Simpla retaplikaĵo por la primfaktorigo de nombro."
         },
         aboutMeParagraph: "Jen io pri mi.",
         aboutMe: {
@@ -220,6 +220,8 @@ function applyLanguage(language) {
     document.getElementById("heading-about-me").textContent = translation.aboutMeHeading;
     document.getElementById("heading-qualifications").textContent = translation.qualificationsHeading;
     document.getElementById("heading-contact").textContent = translation.contactHeading;
+    document.getElementById("project-tile-db-delay-charts-heading").textContent = translation.ptDbDelayCharts.heading;
+    document.getElementById("project-tile-db-delay-charts-description").textContent = translation.ptDbDelayCharts.description;
     document.getElementById("project-tile-asteroids-heading").textContent = translation.ptAsteroids.heading;
     document.getElementById("project-tile-asteroids-description").textContent = translation.ptAsteroids.description;
     document.getElementById("project-tile-game-of-life-heading").textContent = translation.ptGameOfLife.heading;
@@ -229,8 +231,6 @@ function applyLanguage(language) {
     document.getElementById("project-tile-math-game-description").textContent = translation.ptMathGame.description;
     document.getElementById("project-tile-mastermind-heading").textContent = translation.ptMastermind.heading;
     document.getElementById("project-tile-mastermind-description").textContent = translation.ptMastermind.description;
-    document.getElementById("project-tile-pf-calculator-heading").textContent = translation.ptPfCalculator.heading;
-    document.getElementById("project-tile-pf-calculator-description").textContent = translation.ptPfCalculator.description;
     document.getElementById("about-me-heading-1").textContent = translation.aboutMe.heading1;
     document.getElementById("about-me-heading-2").textContent = translation.aboutMe.heading2;
     document.getElementById("about-me-paragraph-1").textContent = translation.aboutMe.paragraph1;
@@ -298,9 +298,9 @@ function openPage(href) {
 setLanguageOnLoad();
 openSectionOnLoad();
 
+document.getElementById("project-tile-db-delay-charts").addEventListener("click", () => { openPage("db-delay-charts.html"); });
 document.getElementById("project-tile-asteroids").addEventListener("click", () => { openPage("asteroids.html"); });
 document.getElementById("project-tile-game-of-life").addEventListener("click", () => { openPage("game-of-life.html") });
 document.getElementById("project-tile-wanda").addEventListener("click", () => { openPage("wanda.html"); });
 document.getElementById("project-tile-math-game").addEventListener("click", () => { openPage("math-game.html") });
 document.getElementById("project-tile-mastermind").addEventListener("click", () => { openPage("mastermind.html"); });
-document.getElementById("project-tile-pf-calculator").addEventListener("click", () => { openPage("pf-calculator.html"); });

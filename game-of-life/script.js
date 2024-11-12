@@ -87,11 +87,22 @@ var World = /** @class */ (function () {
         return true;
     };
     World.prototype.drawCells = function (cellSize, scaledOffset) {
+        // ctx.fillStyle = "black";
+        // for (let y = 0; y < viewRows; y++) {
+        //     for (let x = 0; x < viewColumns; x++) {
+        //         const worldX = center.x - Math.floor(viewColumns / 2) + x;
+        //         const worldY = center.y - Math.floor(viewRows / 2) + y;
+        //         if (this.getCell(worldX, worldY)) {
+        //             drawCell(x, y, cellSize, scaledOffset);
+        //         }
+        //     }
+        // }
         var startX = Math.floor(-scaledOffset.x / (cellSize + 1));
         var startY = Math.floor(-scaledOffset.y / (cellSize + 1));
         var endX = startX + viewColumns;
         var endY = startY + viewRows;
         ctx.fillStyle = "black";
+        var counter = 0;
         for (var y = startY; y <= endY; y++) {
             for (var x = startX; x <= endX; x++) {
                 var worldX = center.x - Math.floor(viewColumns / 2) + x;
@@ -99,8 +110,10 @@ var World = /** @class */ (function () {
                 if (this.getCell(worldX, worldY)) {
                     drawCell(x, y, cellSize, scaledOffset);
                 }
+                counter++;
             }
         }
+        console.log(counter);
     };
     World.prototype.computeNextGenerationWorld = function () {
         var _this = this;

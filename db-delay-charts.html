@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="language-selector" class="language-selector">
+                <div class="language" onmousedown="setLanguage('de', true);">
+                    <img src="img/flag/de.png" alt="Deutsch" class="flag">
+                    <p class="language-name">Deutsch</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('en', true);">
+                    <img src="img/flag/gb.png" alt="English" class="flag">
+                    <p class="language-name">English</p>
+                </div>
+                <div class="language" onmousedown="setLanguage('eo', true);">
+                    <img src="img/flag/eo.png" alt="Esperanto" class="flag">
+                    <p class="language-name">Esperanto</p>
+                </div>
+            </div>
+            <div class="project-div-db-delay-charts">
+                <h1 id="title"></h1>
+                <h2 id="heading-chart-gallery"></h2>
+                <div class="gallery">
+                    <img src="img/db-delay-charts/n-changes.png" alt="DB delay charts image 1" onclick="openLightbox(); currentSlide(0);" style="width: 400px;">
+                    <img src="img/db-delay-charts/n-changes-no-duplicates.png" alt="DB delay charts image 2" onclick="openLightbox(); currentSlide(1);">
+                    <img src="img/db-delay-charts/all-changes.png" alt="DB delay charts image 3" onclick="openLightbox(); currentSlide(2);">
+                    <img src="img/db-delay-charts/avg-changes.png" alt="DB delay charts image 4" onclick="openLightbox(); currentSlide(3);">
+                </div>
+                <p id="paragraph-chart-gallery-hint"></p>
+                <h2 id="heading-description"></h2>
+                <p id="paragraph-description-1"></p>
+                <p id="paragraph-description-2"></p>
+                <p id="paragraph-description-3"></p>
+                <h2 id="heading-language"></h2>
+                <p>Python 3 (Pandas, Matplotlib)</p>
+                <h2>GitHub</h2>
+                <a href="https://github.com/julian-hoelz/db-delay-charts" target="_blank" class="image-link">
+                    <img src="img/github.png" alt="GitHub image">
+                    <p id="paragraph-to-repository"></p>
+                </a>
+                <hr>
+                <button id="button-back-to-homepage" class="back-button" onclick="backToHomepage();"></button>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox();">&times;</span>
+            <div class="lightbox-content">
+                <div class="slides">
+                    <img src="img/db-delay-charts/n-changes.png" alt="DB delay charts image 1">
+                    <p id="description-1" class="description"></p>
+                </div>
+                <div class="slides">
+                    <img src="img/db-delay-charts/n-changes-no-duplicates.png" alt="DB delay charts image 2">
+                    <p id="description-2" class="description"></p>
+                </div>
+                <div class="slides">
+                    <img src="img/db-delay-charts/all-changes.png" alt="DB delay charts image 3">
+                    <p id="description-3" class="description"></p>
+                </div>
+                <div class="slides">
+                    <img src="img/db-delay-charts/avg-changes.png" alt="DB delay charts image 4">
+                    <p id="description-4" class="description"></p>
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+        <script src="js/db-delay-charts-script.js"></script>
+    </body>
+</html>

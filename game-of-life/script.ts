@@ -112,6 +112,7 @@ class World {
         const endX = startX + viewColumns;
         const endY = startY + viewRows;
         ctx.fillStyle = "black";
+        let counter = 0;
         for (let y = startY; y <= endY; y++) {
             for (let x = startX; x <= endX; x++) {
                 const worldX = center.x - Math.floor(viewColumns / 2) + x;
@@ -119,8 +120,10 @@ class World {
                 if (this.getCell(worldX, worldY)) {
                     drawCell(x, y, cellSize, scaledOffset);
                 }
+                counter++;
             }
         }
+        console.log(counter);
     }
 
     computeNextGenerationWorld(): World {
