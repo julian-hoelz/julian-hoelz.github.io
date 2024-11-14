@@ -239,22 +239,35 @@ a.link-button:active,
 }
 
 .prev,
-.next {
+.next,
+.prev-2,
+.next-2 {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    color: black;
     font-size: 30px;
     padding: 16px;
     margin-top: -50px;
     user-select: none;
 }
 
-.prev {
+.prev,
+.next {
+    color: black;
+}
+
+.prev-2,
+.next-2 {
+    color: white;
+}
+
+.prev,
+.prev-2 {
     left: 0;
 }
 
-.next {
+.next,
+.next-2 {
     right: 0;
 }
 
